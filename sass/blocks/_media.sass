@@ -1,0 +1,92 @@
+@media ( max-width: 1200px )
+    .promo
+        .header
+            padding: 0 15px 0 15px
+        &__wrapper
+            align-items: center
+
+@media ( max-width: 991px )
+    .promo
+        .header
+            position: relative
+            &__logo
+                width: 200px
+            &__official
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 5px
+    .benefit
+        display: none
+@media ( max-width: 767px)
+    .promo
+        background: url(../../img/bg/bg1.png) left -50px center/cover no-repeat
+        .header
+            position: relative
+            &__logo
+                width: 200px
+            &__official
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 80px
+        &__subheader
+            font-size: 21px
+            margin-top: 6px
+        &__header
+            font-size: 38px
+    .benefit
+        display: none
+@media ( max-width: 575px)
+    .promo
+        padding: 21px 0 50px 0
+        background: url(../../img/bg/bg1.png) left -146px center/cover no-repeat
+        .header
+            position: relative
+            &__phone
+                font-size: 11px
+            .button
+                max-width: 114px
+                max-height: 25px
+                font-size: 10px
+                padding-top: 2px
+            &__logo
+                max-width: 170px  
+                padding-right: 15px          
+            &__official
+                font-size: 11px
+                position: absolute
+                left: 48%
+                transform: translateX(-50%)
+                top: 80px
+                span
+                    font-size: 14px
+        &__subheader
+            font-size: 14px
+            margin-top: 0
+            line-height: 16px
+            text-align: center
+        &__header
+            margin-top: 17px
+            font-size: 21px
+            line-height: 35px
+        &__icons
+            display: block
+            margin-top: 37px
+            width: 100%
+        &__icon
+            font-size: 12px
+            margin: 0 auto
+            margin-top: 30px
+            img
+                margin-bottom: 5px
+        &__link
+        .button_main
+            width: 80%
+            a
+                font-size: 12px
+        
+
+    .benefit
+        display: none
+        
