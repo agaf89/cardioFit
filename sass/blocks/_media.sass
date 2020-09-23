@@ -16,11 +16,18 @@
                 left: 50%
                 transform: translateX(-50%)
                 top: 5px
-    .benefit
-        display: none
+    .consultation           
+        .title__left
+            text-align: center
+        &__descr
+            text-align: center
+        .feed-form
+            margin: 0 auto
+            margin-top: 36px
+        
 @media ( max-width: 767px)
     .promo
-        background: url(../../img/bg/bg1.png) left -50px center/cover no-repeat
+        background: url(../img/bg/bg1.png) left -50px center/cover no-repeat
         .header
             position: relative
             &__logo
@@ -36,11 +43,39 @@
         &__header
             font-size: 38px
     .benefit
-        display: none
+        padding: 55px 0 60px 0
+        .title
+            font-size: 26px
+        &__items
+            display: block
+            margin-top: 48px
+        &__item
+            margin-top: 46px
+            img
+                width: 60px
+        &__text
+            margin: 0 auto
+            margin-top: 5px
+        &__title
+            margin-top: 15px
+    .consultation           
+        .title__left
+            font-size: 30px
+        &__descr
+            
+    .catalog   
+        &__tabs
+            padding-left: 27px !important
+            padding-right: 27px
+        &__tab
+            margin: 0px 0px !important
+
+            
+        
 @media ( max-width: 575px)
     .promo
         padding: 21px 0 50px 0
-        background: url(../../img/bg/bg1.png) left -146px center/cover no-repeat
+        background: url(../img/bg/bg1.png) left -146px center/cover no-repeat
         .header
             position: relative
             &__phone
@@ -85,8 +120,46 @@
             width: 80%
             a
                 font-size: 12px
-        
-
     .benefit
-        display: none
-        
+        padding: 39px 0 60px 0
+        &__title
+            font-size: 15px
+        .title
+            font-size: 20px
+        &__text
+            font-size: 12px
+            
+    .consultation      
+        padding: 49px 0 63px 0 !important
+        min-height: 550px  !important
+        .title__left
+            line-height: 30px
+            font-size: 18px
+            padding: 0 15px
+        &__descr
+            padding: 0 15px
+            font-size: 14px !important  
+            margin-top: 50px !important  
+        .feed-form
+            max-width: 100%  
+            margin-top: 27px
+            input
+                text-align: center
+                &:nth-child(2)
+                    padding-left: 21px
+            .button_submit
+                font-size: 13px
+    .catalog
+        .title
+            font-size: 20px
+            margin-top: 25px
+        .catalog__tabs
+            margin-top: 33px
+            
+        .catalog__tab
+            font-size: 10px
+            line-height: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            
