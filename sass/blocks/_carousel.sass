@@ -41,22 +41,21 @@
             list-style-type: none
             margin-right: 15px
             margin-left: 15px
-            
+            background-color: $main-color
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            transition: 0.4s all
+            cursor: pointer
             button
                 border: none
+                opacity: 0
                 background-color: $main-color
-                width: 20px
-                height: 20px
-                border-radius: 50%
                 font-size: 0
                 outline: none
-                transition: 0.4s all
-                &:focus
-                    opacity: 0.5
-                    width: 15px
-                    height: 15px
-                    &:hover
-                        box-shadow: none
-                &:hover
-                    box-shadow: 3px 3px 20px $main-color
-                    border: none
+                
+        .slick-active
+            margin-top: 3px
+            width: 15px !important
+            height: 15px !important
+            opacity: 0.5
