@@ -43,6 +43,41 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('fast');
     });
   });
+  $('#consultation-form').validate({
+    rules: {
+      name: "required",
+      phone: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        email: {
+          required: "Нам нужна почта для контакта с вами",
+          email: "Некорректный адрес почты"
+        }
+      }
+    }
+  });
+  $('#consultation form').validate({
+    rules: {
+      name: "required",
+      phone: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        email: {
+          required: "Нам нужна почта для контакта с вами",
+          email: "Некорректный адрес почты"
+        }
+      }
+    }
+  });
+  $('#order form').validate();
 });
 
 
