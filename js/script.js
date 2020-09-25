@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.carousel__inner').slick({
       speed: 700,
-      prevArrow: '<button type="button" class="slick-prev"><img src="../img/slider/prev.png"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="../img/slider/next.png"></button>',
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/prev.png"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/slider/next.png"></button>',
       responsive: [
           {
             breakpoint: 992,
