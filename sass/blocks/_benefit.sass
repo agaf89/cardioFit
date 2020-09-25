@@ -14,7 +14,12 @@
     &__item
         text-align: center
     &__icon
-
+        &_animated
+            animation-name: hearbeat
+            animation-duration: 2s
+            animation-iteration-count: infinite
+            &:hover
+                animation-play-state: paused
     &__title
         margin-top: 38px
         color: #0d0d0d

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="icons/heart.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/d946538442.js" crossorigin="anonymous"></script>
     <title>CardioFit</title>
   </head>
   <body>
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -67,7 +67,7 @@
               так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
           </div>
           <div class="benefit__item">
-            <img src="./icons/section2/heart.png" alt="heart" class="benefit__icon">
+            <img src="./icons/section2/heart.png" alt="heart" class="benefit__icon benefit__icon_animated">
             <div class="benefit__title">Заботимся о здоровье</div>
             <div class="benefit__text">Мы работаем для того, 
               чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
@@ -94,13 +94,13 @@
         </div>
         <form id='consultation-form' class="feed-form" action="#">
           <input  name="name" required placeholder="Your name" type="text">
-          <input  name="phone" required placeholder="Your phone" type="text">
+          <input  name="phone" required placeholder="Your phone">
           <input  name="email" required placeholder="Your e-mail" type="email">
           <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
       <div class="container">
         <div class="carousel__inner">
           <div><img id="0" src="img/slider/polar1.png" alt="1"></div>
@@ -108,7 +108,7 @@
           <div><img id="2" src="img/slider/polar3.png" alt="3"></div>
         </div>
       </div>
-    </section>
+    </div>
     <section class="catalog">
       <div class="container">
         <h2 class="title">Каталог пульсометров</h2>
@@ -399,7 +399,7 @@
     <section class="feedback">
       <div class="container">
         <h2 class="title">отзывы клиентов</h2>
-        <div class="feedback-item">
+        <div class="feedback-item animate__animated animate__fadeInUp wow " data-wow-duration = "1s" data-wow-delay = "1s">
           <img src="img/client/client1.png" alt="1" class="feedback-item__img">
           <div class="feedback-item__feed">
             <h3 class="feedback-item__title">
@@ -419,7 +419,7 @@
           </div>
           <hr>
         </div>
-        <div class="feedback-item">
+        <div class="feedback-item animate__animated animate__fadeInUp wow " data-wow-duration = "1s" data-wow-delay = "1s">
           <img src="img/client/client3.png" alt="1" class="feedback-item__img">
           <div class="feedback-item__feed">
             <h3 class="feedback-item__title">
@@ -440,7 +440,7 @@
           <hr>
         
         </div>
-        <div class="feedback-item">
+        <div class="feedback-item animate__animated animate__fadeInUp wow " data-wow-duration = "1s" data-wow-delay = "1s">
           <img src="img/client/client2.png" alt="1" class="feedback-item__img">
           <div class="feedback-item__feed">
             <h3 class="feedback-item__title">
@@ -481,7 +481,7 @@
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
           <form class="feed-form feed-form_mt25" action="#">
             <input  name="name" required placeholder="Your name" type="text">
-            <input  name="phone" required placeholder="Your phone" type="text">
+            <input  name="phone" required placeholder="Your phone">
             <input  name="email" required placeholder="Your e-mail" type="email">
             <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
           </form>
@@ -491,9 +491,9 @@
         <div class="modal__subtitle">Ваш заказ:</div>
         <div class="modal__descr">Пульсометр Polar FT1</div>
           <form class="feed-form feed-form_mt25" action="#">
-            <input  name="name" placeholder="Your name" type="text">
-            <input  name="phone" placeholder="Your phone" type="text">
-            <input  name="email" placeholder="Your e-mail" type="email">
+            <input required  name="name" placeholder="Your name" type="text">
+            <input required name="phone" placeholder="Your phone">
+            <input required name="email" placeholder="Your e-mail" type="email">
             <button class="button button_submit">Купить</button>
           </form>
       </div>
@@ -504,11 +504,18 @@
           в ближайшее время!</div>
       </div>
     </div>
-      
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
+    <a class="pageup" href="#up"><img src="icons/up-chevron-button.svg" alt="up"> </a>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>      
     <script src="js/script.js"></script>
+    
   </body>
 </html>
