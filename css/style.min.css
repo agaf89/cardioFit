@@ -322,7 +322,6 @@
   font-family: "Museo Sans Cyrl -300";
   font-size: 14px;
   font-weight: 400;
-  line-height: 66px;
   padding: 20px 0 20px 20px;
   margin-bottom: 15px;
   border: none;
@@ -708,8 +707,9 @@
   font-weight: 300;
 }
 
-.feedback-item hr {
+.feedback hr {
   max-width: 940px;
+  margin-top: 60px;
   background-color: #f6f6f6;
   border-bottom: none;
 }
@@ -1105,6 +1105,9 @@
   .feedback .feedback-item__feed {
     margin-left: 0px;
     padding: 0 15px;
+  }
+  .feedback hr {
+    max-width: 250px;
   }
   .footer .footer__info {
     top: 100% !important;
